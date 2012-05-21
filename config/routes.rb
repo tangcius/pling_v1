@@ -1,4 +1,16 @@
 Pling::Application.routes.draw do
+  get "static_pages/profile"
+
+  get "static_pages/admin"
+
+  get "static_pages/register"
+
+  get "static_pages/thanks"
+
+  get "static_pages/help"
+
+  get "static_pages/about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
