@@ -8,9 +8,6 @@ class StaticPagesController < ApplicationController
   def register
   end
 
-  def thanks
-  end
-
   def help
   end
 

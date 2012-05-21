@@ -1,4 +1,6 @@
 Pling::Application.routes.draw do
+  match '/thanks', to: "referrals#thanks"
+
   get "users/new"
 
   match '/signup', to: 'users#new'
@@ -6,7 +8,6 @@ Pling::Application.routes.draw do
   match '/profile', to: 'static_pages#profile'
   match '/admin', to: 'static_pages#admin'
   match '/register', to: 'static_pages#register'
-  match '/thanks', to: 'static_pages#thanks'
   match '/help', to: 'static_pages#help'
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'

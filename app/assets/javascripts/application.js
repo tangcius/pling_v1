@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+window.onload = function() {
+  if(document.title == 'pling | Thanks')
+  {
+    var i = document.createElement("img");
+    var url_string = "https://www.curebit.com/public/nicks-shop/subscriptions/create.js?subscription[email]=nine@go.com&subscription[customer_id]="+ window.dude_id +  "&v=0.4";    
+    i.src = url_string;
+  }
+}
