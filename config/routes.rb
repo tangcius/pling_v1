@@ -1,15 +1,16 @@
 Pling::Application.routes.draw do
-  get "static_pages/profile"
+  get "users/new"
 
-  get "static_pages/admin"
+  match '/signup', to: 'users#new'
+  
+  match '/profile', to: 'static_pages#profile'
+  match '/admin', to: 'static_pages#admin'
+  match '/register', to: 'static_pages#register'
+  match '/thanks', to: 'static_pages#thanks'
+  match '/help', to: 'static_pages#help'
+  match '/about', to: 'static_pages#about'
+  match '/contact', to: 'static_pages#contact'
 
-  get "static_pages/register"
-
-  get "static_pages/thanks"
-
-  get "static_pages/help"
-
-  get "static_pages/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
