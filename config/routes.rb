@@ -1,14 +1,16 @@
 Pling::Application.routes.draw do
-  match '/thanks', to: "referrals#thanks"
+  resources :users
 
-  get "users/new"
+  match '/thanks', to: "referrals#thanks"
+  
+  root to: 'static_pages#about'
 
   match '/signup', to: 'users#new'
   
   match '/profile', to: 'static_pages#profile'
   match '/admin', to: 'static_pages#admin'
   match '/register', to: 'static_pages#register'
-  match '/help', to: 'static_pages#help'
+  match '/press', to: 'static_pages#press'
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
 

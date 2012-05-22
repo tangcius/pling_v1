@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
   def register
   end
 
-  def help
+  def press
   end
 
   def about
