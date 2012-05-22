@@ -11,7 +11,7 @@ Pling::Application.routes.draw do
   match '/profile', to: 'static_pages#profile'
   match '/admin', to: 'static_pages#admin'
   match '/register', to: 'static_pages#register'
-  match '/press', to: 'static_pages#about'
+  match '/press', to: 'static_pages#press'
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
 
