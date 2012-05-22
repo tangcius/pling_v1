@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def profile
+    @user = User.find_by_remember_token(params[:remember_token])
   end
 
   def admin

@@ -5,7 +5,9 @@
       <h1>
         <%= @user.name %> <br/> <br/>
 				(<%= @user.id %>) <br/> <br/>
-				<%= @user.user_type%>
+				<%= @user.user_type%> <br/><br/>
+				
+				Signed in? <%= signed_in? %>
       </h1>
     </section>
   </aside>
