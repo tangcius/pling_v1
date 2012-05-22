@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @user.user_type = params[:user_type]
   end
   
   def create

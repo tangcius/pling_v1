@@ -10,5 +10,5 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :type, :referred_by
+  attr_accessible :name, :email, :user_type, :referred_by
 end

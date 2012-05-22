@@ -5,7 +5,8 @@ Pling::Application.routes.draw do
   
   root to: 'static_pages#about'
 
-  match '/signup', to: 'users#new'
+  match '/traveler', to: 'users#new', user_type: "traveler"
+  match '/translator', to: "users#new", user_type: "translator"
   
   match '/profile', to: 'static_pages#profile'
   match '/admin', to: 'static_pages#admin'

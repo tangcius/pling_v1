@@ -10,8 +10,13 @@
 
       <%= f.label :email %>
       <%= f.text_field :email %>
-
+			
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+			
+			<div class='hideme'>
+			<%= f.text_field :user_type %><%= f.text_field :referred_by %>
+			</div>
+			
     <% end %>
   </div>
 </div>
